@@ -1,23 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Like from './components/Like';
+import FrameworkList from './components/FrameworkList';
+import PostList from './components/PostList';
+import Calculator from './components/Calculator';
+import LevelA from './components/LevelA';
+import MailContextProvider from './contexts/MailContext';
+import Pot from './components/Pot';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>React Practice</h1>
+        {/* <MailContextProvider>
+          <LevelA />
+        </MailContextProvider> */}
+        <Pot/>
       </header>
     </div>
   );
